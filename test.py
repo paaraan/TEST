@@ -18,6 +18,10 @@ def divide(x, y):
         return 'Error: Division by zero!'
     return x / y
 
+def power(x, y):
+    '''두 숫자를 거듭제곱'''
+    return x ** y
+
 if __name__ == '__main__':
     # 사용자로부터 숫자를 입력받습니다.
     num1 = float(input('첫 번째 숫자를 입력하세요: '))
@@ -28,6 +32,7 @@ if __name__ == '__main__':
     print(f'{num1} * {num2} = {multiply(num1, num2)}')
     print(f'{num1} - {num2} = {subtract(num1, num2)}')
     print(f'{num1} / {num2} = {divide(num1, num2)}')
+    print(f'{num1} ** {num2} = {power(num1, num2)}')
 
 
 
